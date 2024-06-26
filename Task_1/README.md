@@ -1,6 +1,6 @@
 # Task 1: Analysis on Movie Reviews
 
-## Develop a sentiment analysis model to classify movie reviews as positive and negative. Use a dataset like the IMDB Movie Reviews dataset for training and testing.
+Develop a sentiment analysis model to classify movie reviews as positive and negative. Use a dataset like the IMDB Movie Reviews dataset for training and testing.
 
 ## Sentiment Analysis with LSTM
 
