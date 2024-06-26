@@ -4,7 +4,7 @@
 
 ## Credit Card Fraud Detection with Random Forest
 
-This project implements a credit card fraud detection model using Random Forest classifiers on the credit card transaction dataset. The goal is to identify fraudulent transactions.
+This project implements a credit card fraud detection model using Random Forest classifiers, which is which is a supervised learning algorithm, on the credit card transaction dataset. The goal is to identify fraudulent transactions. SMOTE (Synthetic Minority Over-sampling Technique) is used to handle class imbalance.
 
 ## Project Structure
 
