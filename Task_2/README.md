@@ -1,6 +1,6 @@
 # Task 2: Credit Card Fraud Detection
 
-## Develop a fraud detection model to identify fraudulent credit card transactions. Use techniques like anomaly detection or supervised learning with imbalanced data.
+Develop a fraud detection model to identify fraudulent credit card transactions. Use techniques like anomaly detection or supervised learning with imbalanced data.
 
 ## Credit Card Fraud Detection with Random Forest
 
