@@ -1,3 +1,17 @@
+# CODTECH Internship
+
+**Name:** Sukash L
+
+**Company:** CODTECH IT SOLUTIONS
+
+**ID:** CT4ML2809
+
+**Domain:** Machine Learning
+
+**Duration:** June to July 2024 
+
+
+
 # Task 2: Credit Card Fraud Detection
 
 Develop a fraud detection model to identify fraudulent credit card transactions. Use techniques like anomaly detection or supervised learning with imbalanced data.
