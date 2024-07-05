@@ -12,10 +12,15 @@ This project implements a sentiment analysis model using LSTM neural networks on
 - `model.py`: Script defining the LSTM model architecture and training functions.
 - `preprocess.py`: Script for data preprocessing, including text tokenization and padding.
 - `main.py`: Main script to load data, preprocess, build, train, and evaluate the LSTM model.
-
+- `app.py`: Streamlit application for real-time sentiment prediction of user-provided movie reviews.
+- `sentiment_model.h5`: Saved sentiment model file.
+  
 ## Usage
 1. Install the required dependencies listed in `requirements.txt` using pip:
     `pip install -r requirements.txt`
    
 2. Run the code for training using the following command:
     `python main.py`
+
+3. Launch the Streamlit application using the command:
+    `streamlit run app.py`
