@@ -1,20 +1,33 @@
 # main.py
 
-import preprocess
-from model import build_model, train_model, evaluate_model
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from imblearn.over_sampling import SMOTE
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report
+from joblib import dump
 
-def main():
-    # Load and preprocess data
-    X_train, X_test, y_train, y_test = preprocess.load_and_preprocess_data()
+# Load your dataset
+df = pd.read_csv('Task_2\creditcard.csv')
 
-    # Build model
-    model = build_model()
+# Separate features and target
+X = df.drop('Class', axis=1)
+y = df['Class']
 
-    # Train model
-    model = train_model(model, X_train, y_train)
+# Split data into train and test sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-    # Evaluate model
-    evaluate_model(model, X_test, y_test)
+# Apply SMOTE to handle class imbalance
+smote = SMOTE(random_state=42)
+X_resampled, y_resampled = smote.fit_resample(X_train, y_train)
 
-if __name__ == "__main__":
-    main()
+# Train logistic regression model
+model = LogisticRegression(max_iter=1000)
+model.fit(X_resampled, y_resampled)
+
+# Save the model
+dump(model, 'logistic_regression_model.joblib')
+
+# Evaluate the model
+y_pred = model.predict(X_test)
+print(classification_report(y_test, y_pred))
