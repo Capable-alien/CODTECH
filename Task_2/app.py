@@ -16,7 +16,6 @@ def predict_fraud(csv_file):
     X = df.drop(columns=['Class'])  # Exclude 'Class' column from features
     predictions = model.predict(X)
     
-    # Map predictions to 'fraudulent' or 'non-fraudulent'
     df['Predicted_Class'] = np.where(predictions == 1, 'fraudulent', 'non-fraudulent')
     
     return df
