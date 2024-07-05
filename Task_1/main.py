@@ -1,11 +1,12 @@
 # main.py
-
+from keras.models import load_model
 import preprocess
 from model import build_model, train_model, evaluate_model
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
 def main():
     # Define constants
@@ -33,6 +34,10 @@ def main():
 
     # Evaluate model
     evaluate_model(model, X_test, y_test)
+
+    # Save the model
+    model.save('Task_1\sentiment_model.h5')
+    print("Model saved as sentiment_model.h5")
 
     # Print classification report
     y_pred_prob = model.predict(X_test)
