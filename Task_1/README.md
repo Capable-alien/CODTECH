@@ -1,3 +1,16 @@
+# CODTECH Internship
+
+**Name:** Sukash L
+
+**Company:** CODTECH IT SOLUTIONS
+
+**ID:** CT4ML2809
+
+**Domain:** Machine Learning
+
+**Duration:** June to July 2024 
+
+
 # Task 1: Analysis on Movie Reviews
 
 Develop a sentiment analysis model to classify movie reviews as positive and negative. Use a dataset like the IMDB Movie Reviews dataset for training and testing.
